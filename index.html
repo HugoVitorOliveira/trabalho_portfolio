@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="SobreMim">
+    <header>
+       <h4>Meu Portfólio</h4>
+       <ul>
+           <a href="#SobreMim">Sobre mim</a>
+           <a href="#Formacao">Formação</a>
+           <a href="#Portfolio">Portfólio</a>
+           <a href="#Contato"> Contato</a>
+       </ul>
+    </header>
+    <div class="container">
+        <div class="text">
+            <h1>Sobre mim :)</h1>
+            <p>Olá, meu nome é Hugo Vitor de Oliveira Moura, tenho 20 anos e adoro cafés especiais ☕</p>
+            <p>Meu principais Hobbies (Fora Café) são videogames, musculação e tecnologia 🎮</p>
+            <p>Atualmente trabalho como Analista de suporte na Publitech Software 👨‍💻</p>
+            <p>Trabalho e moro em Pitanga, uma pequena cidade no interior do paraná 🗺</p>
+            <p>Amante do Javinha e sigo dedicado traçando a minha história no mercado de tecnologia! 🤖</p>
+        </div>
+        <div class="gif">
+            <img src="ec0b62b7a02c112ed611c2fae49af355.gif">
+        </div>
+    </div>
+    </section>
+
+    <section id="Formacao">
+        <div class="containerFormacao">
+            <div class="gif">
+                <img src="YQDs.gif">
+            </div>
+            <div class="textFormacao">
+                <h1>Formação</h1>
+                <p>Me formei no ensino médio pelo Colégio Dorigon.</p>
+                <p>Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER</p>
+                <p>Tenho certificados de cursos da Udemy de Lógica de Programação e Java (Nélio Alves)</p>
+                <p>Tenho conhecimentos em inglês (nível B1)</p>
+            </div>
+        </div>
+        </section>
+        
+        <section id="Portfolio">
+            <div class="container">
+                <div class="text" id = "textPortfolio">
+                    <h1>Portfólio</h1>
+                    <a href="https://github.com/HugoVitorOliveira/WebServices_SpringBoot">WebServices com SpringBoot</a>
+                    <a href="https://github.com/HugoVitorOliveira/dao-jdbc-crud">CRUD usando JDBC</a>
+                    <a href="https://github.com/HugoVitorOliveira/Insta_LandingPage">Landing page do instagram</a>
+                    <a href="https://github.com/HugoVitorOliveira/Flex_Turismos">Página de uma empresa ficticia FlexTurismos</a>
+                </div>
+                <div class="gif">
+                    <img src="4hss.gif">
+                </div>
+            </div>
+            </section>
+
+            <section id="Contato">
+                <div class="containerFormacao">
+                    <div class="gif">
+                        <img src="299x.gif">
+                    </div>
+                    <div class="textFormacao">
+                        <h1>Contato</h1>
+                        <p>Insira os campos abaixo:</p>
+                        <input type="text" id = 'nome' value="seu nome..." onfocus=limparTexto(this)>
+                        <input type="text" id = 'email' value="seu email..." onfocus=limparTexto(this)>
+                        <!-- <input type="text" id = 'mensagem' value = "Sua mensagem aqui..." onfocus=limparTexto(this) size = "100"> -->
+                        <textarea type="text" id = 'mensagem' value = "Sua mensagem aqui..." onfocus=limparTexto(this) id="Textarea" rows="4" cols="50"></textarea>
+                        <input type="button" value="Envie!" id = "button" onclick=enviado()>
+
+
+                    </div>
+                </div>
+                </section>
+
+    <footer>
+        <p>RU:4298012</p>
+        <div></div>
+        <p>contatohugovitoroliveira@gmail.com</p>
+    </footer>
+    <script>
+        // Função para limpar o texto quando o input recebe foco
+        function limparTexto(elemento) {
+            document.getElementById(elemento.id).value = "";
+        }
+        function enviado(){alert("Enviado")}
+    </script>
+</body>
+</html>
